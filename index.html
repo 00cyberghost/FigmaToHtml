@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="row w-100">
+                    <div class="col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <a class="navbar-brand float-start" href="index.html"><img src="assets/img/logo.png"></a>
+                        <button class="navbar-toggler d-sm-flex d-lg-none mt-3 d-xl-none d-xxl-none float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                        <ul class="navbar-nav justify-content-around mt-2 flex-grow-1 flex-row pe-3 d-none d-lg-flex d-xl-flex d-xxl-flex">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="active-members.html">Active Members</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="success-stories.html">Success Stories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact us</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <ul class="navbar-nav justify-content-end mt-2 flex-grow-1 flex-row pe-3 d-none d-lg-flex d-xl-flex d-xxl-flex">
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="sign-in.html">Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-primary bg-secondary borderless p-2" href="register.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="offcanvas offcanvas-end d-sm-flex d-lg-none d-xl-none d-xxl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="active-members.html">Active Members</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="success-stories.html">Success Stories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact us</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="sign-in.html">Sign in</a>
+                            </li>
+                        
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <div class="container-fluid">
+                <div class="row position-relative">
+                    <!-- <figure>
+                        <img src="assets/img/My-project-1.png" class="img-responsive w-100 mt-5" alt="">
+                    </figure> -->
+                    <div class="col-md-7 bent-container d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="745" height="381" viewBox="0 0 745 381" fill="none">
+                            <path opacity="0.5" d="M401.761 967.329C361.503 1033.34 274.585 1055.51 207.624 1016.85L-401.244 665.325C-486.639 616.022 -493.615 497.461 -414.675 437.043L117.408 29.7991C163.538 -5.50745 226.726 -9.7814 276.629 19.0297L675.659 249.41C742.62 288.07 764.267 372.924 724.008 438.936L401.761 967.329Z" fill="url(#paint0_linear_1_14191)"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_1_14191" x1="285.669" y1="215.097" x2="-2.89944" y2="238.297" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4B2470"/>
+                                <stop offset="1" stop-color="#FA4A6F"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                    </div>
+                    <div class="col-md-5 mt-5">
+                        <div class="form-container">
+                            <h2>Find your<br>mate with us</h2>
+                            <form>
+                                <h5 class="text-center mb-4">Create your profile for your perfect match!</h5>
+                                <div class="mb-3">
+                                  <label for="for" class="form-label">Create profile for</label>
+                                  <select name="for" class="form-select" id="for" aria-describedby="select create profile for">
+                                    <option value="self">self</option>
+                                  </select>
+                                </div>
+                                <div class="mb-3 row row-gap-2">
+                                    <div class="col-md-6">
+                                        <label for="first-name" placeholder="first name" class="form-label">First name</label>
+                                        <input type="text" value="Cameron" class="form-control" id="first-name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="last-name" placeholder="last name" class="form-label">Last name</label>
+                                        <input type="text" value="Williamson" class="form-control" id="last-name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 row-gap-2">
+                                    <div class="col-md-12">
+                                        <label for="email" placeholder="email address" class="form-label">Email Address</label>
+                                        <input type="email" value="kenzy.lawson@example.com" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 row-gap-2">
+                                    <div class="col-md-12">
+                                        <label for="number" class="form-label">Mobile Number</label>
+                                        <div class="input-group border">
+                                            <select id="number" class="form-select-sm borderless" aria-label="country mobile number code">
+                                                <option selected>(+880) Banglad</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                            <input type="text" class="form-control borderless" aria-label="Text input with dropdown button for mobile number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 row-gap-3">
+                                    <div class="col-md-6">
+                                        <label for="gender" class="form-label">Gender</label>
+                                        <select name="gender" class="form-select form-control-sm" id="gender" aria-describedby="select gender">
+                                            <option value="Female">Female</option>
+                                            <option value="Male">Male</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="country" class="form-label">Country</label>
+                                        <select name="country" class="form-select form-control-sm" id="country" aria-describedby="select country">
+                                            <option value="Bandaglesh" selected>Bandaglesh</option>
+                                            <option value="Nepal">Nepal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row row-gap-3">
+                                    <div class="col-md-6">
+                                        <label for="password" placeholder="password" class="form-label">Create Your Password</label>
+                                        <input type="password" value="123456" class="form-control" id="password">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="confirm-password" placeholder="Confirm your password" class="form-label">Confirm Your Password</label>
+                                        <input type="password" value="123456" class="form-control" id="confirm-password">
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1"><small>I have read and accept the <b>Terms & Conditions</b> and <b>Privacy Policy.</b></small></label>
+                                </div>
+                                <button type="submit" class="btn-primary btn-submit borderless mx-auto">Create Account</button>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 people">
+            <div class="container">
+                
+                <div class="col-md-7 d-flex justify-content-center">
+                    <h3>We bringing people together <br>with our platform in very easy way</h3>
+                </div>
+                
+                <div class="row mt-5 row-gap-5">
+                    <div class="col-md-4 d-flex justify-content-center p-3">
+                        <div>
+                            <i class="bi bi-building-check"></i>
+                            <h6 class="mt-3">Sign Up</h6>
+                            <p><small>Register for free & put up <br>your matrimony profile</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="border p-3">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 48" fill="none">
+                                <path d="M43.7191 47.8121C41.7517 47.8121 39.7955 47.1694 38.1992 45.9856C36.5578 44.7679 35.3773 43.088 34.7928 41.1262C34.6354 40.585 34.3431 40.3708 33.781 40.3708C31.3864 40.3821 29.0592 40.3821 26.8558 40.3821C24.4274 40.3821 22.0553 40.3821 19.7732 40.3708C19.0986 40.3708 18.8963 40.7429 18.7614 41.1375C17.536 45.0047 13.9947 47.5979 9.94746 47.5979C9.70014 47.5979 9.44157 47.5866 9.18299 47.5641C7.30555 47.4175 5.46183 46.6508 4.00034 45.3993C2.4714 44.0915 1.41462 42.3552 0.953694 40.3596C0.380341 37.913 0.886246 35.2747 2.33649 33.1212C3.77549 30.9903 6.00145 29.5472 8.44101 29.1751C8.94691 29.0962 9.45281 29.0623 9.93622 29.0623C10.667 29.0623 11.3977 29.1525 12.0947 29.3329C12.2184 29.3668 12.3196 29.378 12.4095 29.378C12.7693 29.378 12.9491 29.1413 13.0503 28.9609C14.8491 25.8603 16.6816 22.7034 18.4466 19.6593L20.2228 16.6151C20.2566 16.5587 20.2791 16.4911 20.2903 16.446C20.2903 16.4347 20.3015 16.4235 20.3015 16.4122L20.3802 16.2092L20.2341 16.0514C18.4128 14.1572 17.4573 11.7219 17.536 9.18512C17.6147 6.67087 18.7164 4.2581 20.5489 2.5669C22.2127 1.03354 24.4274 0.199219 26.7771 0.199219C29.1492 0.199219 31.3751 1.05609 33.039 2.60072C34.849 4.28064 35.9395 6.68215 36.0069 9.18512C36.0856 11.7219 35.1188 14.1572 33.2975 16.0627L33.1177 16.2431L40.7399 29.3217L40.9535 29.3104C41.3245 29.2878 41.6842 29.254 42.044 29.2202C42.7185 29.1525 43.3481 29.0962 43.9776 29.0962C44.0563 29.0962 44.135 29.0962 44.2137 29.0962C46.2823 29.1525 48.3284 29.9756 49.9585 31.43C51.5886 32.8732 52.6566 34.8124 52.9714 36.8757C53.3312 39.2208 52.8477 41.5885 51.5999 43.5277C50.352 45.467 48.4183 46.8763 46.1586 47.4851C45.3492 47.6994 44.5398 47.8121 43.7191 47.8121ZM43.5504 33.1663C40.6724 33.2001 38.4352 35.4889 38.4465 38.3752C38.4577 41.1826 40.7399 43.4714 43.5392 43.4826H43.5617C44.922 43.4826 46.2036 42.9414 47.1817 41.9606C48.1597 40.9797 48.6994 39.6718 48.6994 38.2963C48.6881 35.5114 46.361 33.1663 43.6067 33.1663H43.5504ZM10.0037 33.1663C7.1594 33.1776 4.85474 35.5002 4.85474 38.3527C4.85474 41.1375 7.19312 43.4826 9.96995 43.4826H10.0037C12.8142 43.4601 15.1076 41.1488 15.1076 38.3301C15.1076 35.4776 12.8255 33.1663 10.0262 33.1663H10.0037ZM24.405 18.4191C24.0115 18.4191 23.8091 18.6784 23.663 18.9264C22.5275 20.8995 21.3583 22.9064 20.2341 24.8456L16.333 31.5428L16.5017 31.7232C17.6596 32.9521 18.4241 34.26 18.8513 35.7369C18.9412 36.0301 19.3347 36.2556 19.6158 36.2668C21.9766 36.2781 24.315 36.2781 26.5747 36.2781C26.5747 36.2781 26.5747 36.2781 26.5859 36.2781C29.0817 36.2781 31.555 36.2781 33.9496 36.2668C34.2531 36.2668 34.6354 35.985 34.7253 35.6918C35.1525 34.2825 35.8608 33.0423 36.8276 32.005C37.2098 31.5879 37.0862 31.2384 36.9288 30.9678C34.5567 26.9202 32.1846 22.85 29.8799 18.8813C29.8012 18.746 29.6101 18.4191 29.1829 18.4191C29.093 18.4191 28.9918 18.4303 28.8794 18.4642C28.1711 18.6558 27.4516 18.746 26.7546 18.746C26.0688 18.746 25.3943 18.6558 24.731 18.4754C24.6073 18.4416 24.4949 18.4191 24.405 18.4191ZM26.7883 4.30319C25.4168 4.30319 24.1239 4.85565 23.1458 5.83655C22.1678 6.81744 21.6394 8.1253 21.6394 9.48954C21.6506 12.2631 23.989 14.6082 26.7546 14.6082H26.7995C29.6326 14.5744 31.926 12.2631 31.9147 9.44444C31.9035 6.64832 29.5651 4.29192 26.7995 4.29192L26.7883 4.30319Z" fill="#FA4A6F"/>
+                            </svg>
+                            <h6 class="mt-3">Sign Up <span class="float-end"></span><i class="bi bi-arrow-right-short float-end"></i></h6>
+                            <p><small>Select & connect with <br>matches you like</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div>
+                            <i class="bi bi-person-heart"></i>
+                            <h6 class="mt-3">Sign Up</h6>
+                            <p><small>Become a premiun member <br>& start a conversation</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 featured">
+            <div class="container-fluid">
+                <h3 class="text-center">Featured profiles</h3>
+                <p class="text-center mt-3">
+                    Aenean at ligula massa. Donec ipsum elit, placenta sed duierrut <br> dapibus semper turpin Fusce nec premium nuns.
+                </p>
+                <div class="slick row justify-content-center mt-5">
+                   <div class="col-md-2 mb-5">
+                        <div class="card h-100">
+                            <img src="assets/img/slick1.png" alt="" class="img-responsive card-imagetop">
+                            <div class="card-body">
+                                <h6 class="card-title fs-6"><small class="text-danger">Profile ID: 23456</small></h6>
+                                <address class="card-text">
+                                    <small>1901 Thornridge Cir. Shiloh, Hawaii 81063</small>
+                                </address>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="col-md-2 mb-5">
+                        <div class="card h-100">
+                            <img src="assets/img/slick2.png" alt="" class="img-responsive card-imagetop">
+                            <div class="card-body">
+                                <h6 class="card-title fs-6"><small class="text-danger">Profile ID: 23456</small></h6>
+                                <address class="card-text">
+                                    <small>1901 Thornridge Cir. Shiloh, Hawaii 81063</small>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="card h-100">
+                            <img src="assets/img/slick3.png" alt="" class="img-responsive card-imagetop">
+                            <div class="card-body">
+                                <h6 class="card-title fs-6"><small class="text-danger">Profile ID: 23456</small></h6>
+                                <address class="card-text">
+                                    <small>1901 Thornridge Cir. Shiloh, Hawaii 81063</small>
+                                </address>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="col-md-2 col-sm-6 mb-5">
+                        <div class="card h-100">
+                            <img src="assets/img/slick4.png" alt="" class="img-responsive card-imagetop">
+                            <div class="card-body">
+                                <h6 class="card-title fs-6"><small class="text-danger">Profile ID: 23456</small></h6>
+                                <address class="card-text">
+                                    <small>1901 Thornridge Cir. Shiloh, Hawaii 81063</small>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6 mb-5">
+                        <div class="card h-100">
+                            <img src="assets/img/slick5.png" alt="" class="img-responsive card-imagetop">
+                            <div class="card-body">
+                                <h6 class="card-title fs-6"><small class="text-danger">Profile ID: 23456</small></h6>
+                                <address class="card-text">
+                                    <small>1901 Thornridge Cir. Shiloh, Hawaii 81063</small>
+                                </address>
+                            </div>
+                        </div>
+                   </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 ballon">
+            <div class="container">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <h3 class="text-start">
+                        Lorem dolor amet consectetur adipiscing. Commode <br><span>acceptor bandit torpor meanness egoists mathis.</span> <br> ucibus laces ultrices acned seed.
+                    </h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row w-100">
+                            <div class="col-md-7">
+                                <div class="position-relative mt-5">
+                                    <div class="wedding-one">
+                                        
+                                    </div>
+                                    <div class="wedding-two">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="p-3 props">
+                                    <div>
+                                        <p class="text-danger"><img src="assets/img/icons/icon1.png" height="30px" width="30px" alt=""><span class="ms-3">100% screened profiles</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="text-danger pt-3"><img src="assets/img/icons/icon2.png" height="30px" width="30px" alt=""><span class="ms-3">Verification by Personal Visit</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="text-danger"><img src="assets/img/icons/icon3.png" height="30px" width="30px" alt=""><span class="ms-3">Strong Privacy</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-5 stories">
+            <div class="container">
+                <div class="row row-gap-5">
+                    <div class="col-md-7 d-flex align-items-center justify-content-center">
+                        <div class="w-50 text-light">
+                            <h3>We have thousands of success stories</h3>
+                            <p class="mt-2">
+                                psum dolor sit amet consectetur. Convallis id elit egoists aurice amet eu lactose Lucius intercom. Proin pellentesque vitae farer temper ultrices nulled
+                               
+                            </p>
+                            <button class="btn btn-primary mt-2 borderless">Get start now <span class="float-end"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                                <path d="M1.32812 11.4402L6.32883 6.43948L1.32812 1.43878" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                              </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row column-gap-0">
+                            <div class="col-md-6 col-6 px-1">
+                                <div class="position-relative">
+                                    <div class="card-container-one">
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc1.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc2.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc2.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                            <div class="overlay"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 px-1">
+                                <div class="position-relative">
+                                    <div class="card-container-two">
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc5.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                            <div class="overlay"></div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc5.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <img src="assets/img/suc6.png" alt="" class="img-responsive card-imagetop">
+                                            <div class="card-body">
+                                                <date class="card-title fs-6"><small class="text-danger">25 august -2020</small></date>
+                                                <p class="card-text">
+                                                    <small>Jenny & Wilson Stories</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 membership">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="w-50">
+                        <h3 class="text-center">Membership Plans</h3>
+                        <p class="text-center">Upgrade your plan as per your customized requirements. With a paid 
+                            membership, you can seamlessly connect with your prospects and get 
+                            more responses. Here are some key benefits:</p>
+                    </div>
+                </div>
+                <div class="row row-gap-5">
+                    <div class="col-md-6">
+                        <div class="border p-5 cont">
+                            <p><b>0.00</b><small>/month</small></p>
+                            <h5>Free Membership</h5>
+                            <hr>
+                            <ul class="first">
+                                <li>Match,Chat & Meet</li>
+                                <li>5 Super likes a week</li>
+                                <li>Hide Advertisements</li>
+                                <li><span class="label"> Free Boost a Month</span></li>
+                                <li><span class="label">New Top Picks Everyday</span></li>
+                                <li><span class="label">Message Before Matching</span></li>
+                                <li><span class="label">Priortised Likes</span></li>
+                                <li><span class="label">See the Likes you’ve sent in the last 7 days</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border position-relative">
+                            <p class="text-center mt-3">20% Off for yearly</p>
+                            <div class="border p-5 cont">
+                                <p><b>0.00</b><small>/month</small></p>
+                                <h5>Free Membership</h5>
+                                <hr>
+                                <ul>
+                                    <li>Match,Chat & Meet</li>
+                                    <li>5 Super likes a week</li>
+                                    <li>Hide Advertisements</li>
+                                    <li>1 Free Boost a Month</li>
+                                    <li>New Top Picks Everyday</li>
+                                    <li>Message Before Matching</li>
+                                    <li>Priortised Likes</li>
+                                    <li>See the Likes you’ve sent in the last 7 days,</li>
+                                    <li>And many more</li>
+                                </ul>
+                                <button class="borderless btn-primary btn-submit mt-2">Subscribe now <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                                    <path d="M1.32812 11.4402L6.32883 6.43948L1.32812 1.43878" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                  </svg></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 testimonial">
+            <div class="container">
+                <h3 class="text-center">What our members say</h3>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="text-center mt-3">
+                            Lorem ipsum dolor sit amet consectetur. In at sed sit tempor. Sed venenatis sodales Maurice bibendum blanket condiments curses.
+                        </div>
+                        <p class="text-center"><img src="assets/img/testimonial.png" alt=""> <span class="ms-1">Brooklyn Simmons</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="text-center mt-3">
+                            Lorem ipsum dolor sit amet consectetur. In at sed sit tempor. Sed venenatis sodales Maurice bibendum blanket condiments curses.
+                        </div>
+                        <p class="text-center"><img src="assets/img/testimonial.png" alt=""> <span class="ms-1">Brooklyn Simmons</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="text-center mt-3">
+                            Lorem ipsum dolor sit amet consectetur. In at sed sit tempor. Sed venenatis sodales Maurice bibendum blanket condiments curses.
+                        </div>
+                        <p class="text-center"><img src="assets/img/testimonial.png" alt=""> <span class="ms-1">Brooklyn Simmons</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <figure>
+                        <img src="assets/img/logo-lite.png" class="img-responsive " alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-style-none p-5">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="active-members.html">Active Members</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-style-none p-5">
+                        <li><a href="privacy-policy.html">Privacy & policy</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-style-none justify-content-center d-flex flex-row gap-3">
+                        <li><i class="bi bi-twitter"></i></li>
+                        <li><i class="bi bi-linkedin"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p class="float-end">© 2022 Real Mate. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
